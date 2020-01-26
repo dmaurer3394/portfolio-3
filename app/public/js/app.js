@@ -109,6 +109,7 @@ $(function() {
           $("#error").hide();
           emptyInputs();
           console.log("success");
+          alert("Message sent");
         }
       })
       .catch(error => {
