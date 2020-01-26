@@ -38,8 +38,14 @@ $(function() {
               <div class="card-body">
                 <h2 class="card-title">${i.name}</h2>
                 <hr/>
-                <p class="card-text">${i.description}</p>
-                <a href="${i.link}" target="_blank"><button id="go" class="btn btn-dark btn card-btn">See More</button></a>
+                <div class="row">
+                  <div class="col-8">
+                    <p class="card-text">${i.description}</p>
+                  </div>
+                  <div class="col-4">
+                    <a href="${i.link}" target="_blank"><button id="${i.go}" class="btn btn-dark btn card-btn">${i.button}</button></a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -47,6 +53,7 @@ $(function() {
         `;
 
         $("#projects").append(projectCard);
+        $("#stop").attr("disabled", true);
       });
     });
   };
@@ -171,4 +178,5 @@ $(function() {
   $("#message").keyup(updateCountdown);
   buttonDisable();
   $(".my-input").keyup(buttonDisable);
+  $("#stop").attr("disabled", true);
 });

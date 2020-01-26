@@ -161,8 +161,8 @@ li:hover {
 .card-btn {
   float: right;
   position: absolute;
-  bottom: -5rem;
-  right: 0rem;
+  /* bottom: -4.5rem; */
+  /* right: 0rem; */
 }
 
 #error {
@@ -180,4 +180,28 @@ li:hover {
 
 .character-limit {
   float: right;
+}
+
+@media only screen and (max-width: 991px) {
+  .card-btn {
+    bottom: 0rem;
+    right: 1rem;
+  }
+
+  .card-text {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .card-btn {
+    bottom: -1rem;
+    right: 1rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .card-btn {
+    bottom: -3rem;
+    right: 1rem;
+  }
 }
