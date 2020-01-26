@@ -142,6 +142,7 @@
           aria-describedby="basic-addon1"
         />
       </div>
+      <span id="error"></span>
       <div class="input-group mb-3">
         <div class="input-group-prepend">
           <span class="input-group-text" id="basic-addon2"
@@ -151,13 +152,12 @@
         <input
           type="text"
           id="email"
-          class="form-control"
+          class="form-control no-error"
           placeholder="Email"
           aria-label="Username"
           aria-describedby="basic-addon1"
         />
       </div>
-
       <div class="input-group">
         <div class="input-group-prepend">
           <span class="input-group-text" id="basic-addon3"
@@ -169,12 +169,25 @@
           class="form-control"
           aria-label="With textarea"
           placeholder="Type here"
+          maxlength="255"
         ></textarea>
       </div>
+      <span class="character-limit">255</span>
+      <span class="character-limit"> / </span>
+      <span class="character-limit" id="countdown"></span>
+      <br />
       <br />
       <button type="button" class="btn btn-dark btn-lg" id="submit">
         <i class="fas fa-paper-plane"></i> Send
       </button>
+      <!-- <div
+        aria-hidden="true"
+        class="alert alert-danger"
+        id="error"
+        role="alert"
+      >
+        A simple danger alert—check it out!
+      </div> -->
     </div>
   </body>
   <footer>

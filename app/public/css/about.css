@@ -161,6 +161,23 @@ li:hover {
 .card-btn {
   float: right;
   position: absolute;
-  bottom: -3.5rem;
+  bottom: -5rem;
   right: 0rem;
+}
+
+#error {
+  color: rgb(228, 0, 0);
+}
+
+.no-error {
+  transition: 1s all ease;
+}
+
+.input-error {
+  background-color: rgb(255, 118, 118);
+  transition: 0.75s all ease;
+}
+
+.character-limit {
+  float: right;
 }

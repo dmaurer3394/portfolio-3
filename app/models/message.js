@@ -9,7 +9,7 @@ module.exports = function(sequelize, Datatypes) {
         isEmail: true
       }
     },
-    Note: {
+    note: {
       type: Datatypes.STRING
     }
   });

@@ -51,6 +51,32 @@ $(function() {
     });
   };
 
+  emptyError = () => {
+    // $("#error").hide();
+    $("#email").removeClass("input-error");
+    $("#email").addClass("no-error");
+  };
+
+  errorTimeout = () => {
+    $("#error")
+      .show()
+      .html("Please enter a valid email address");
+    $("#email").removeClass("no-error");
+    $("#email").addClass("input-error");
+    setTimeout(emptyError, 5000);
+  };
+
+  emptyInputs = () => {
+    $("#name").val("");
+    $("#email").val("");
+    $("#message").val("");
+  };
+
+  updateCountdown = () => {
+    let remaining = 255 - $("#message").val().length;
+    $("#countdown").text(remaining);
+  };
+
   $("#submit").on("click", function(event) {
     event.preventDefault();
 
@@ -61,17 +87,25 @@ $(function() {
       email: $("#email")
         .val()
         .trim(),
-      message: $("#message")
+      note: $("#message")
         .val()
         .trim()
     };
-
-    console.log(messageToMe);
-
-    $.post("/api/message", messageToMe, function(res, err) {
-      console.log(res);
-      console.log(err);
-    });
+    $.post("/api/message", messageToMe, () => {})
+      .then(res => {
+        if (res) {
+          $("#error").hide();
+          emptyInputs();
+          console.log("success");
+        }
+      })
+      .catch(error => {
+        if (error) {
+          console.log(error);
+          errorTimeout();
+          console.log("Please enter a valid email address");
+        }
+      });
   });
 
   // Select all links with hashes
@@ -118,5 +152,8 @@ $(function() {
       }
     });
 
+  $("#error").hide();
   getProjects();
+  updateCountdown();
+  $("#message").keyup(updateCountdown);
 });
