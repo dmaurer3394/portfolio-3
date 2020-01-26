@@ -20,7 +20,6 @@
     />
 
     <!-- Linking to personal styling pages -->
-    <link rel="stylesheet" type="text/css" href="../css/structure.css" />
     <link rel="stylesheet" type="text/css" href="../css/about.css" />
 
     <!-- Link to FontAwesome -->
@@ -29,6 +28,7 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- Link to jQuery -->
     <script
       src="https://code.jquery.com/jquery-3.4.1.js"
       integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
@@ -65,10 +65,15 @@
         <a
           class="linkedIn"
           href="https://www.linkedin.com/in/dalton-m-maurer/"
+          target="blank"
           role="button"
           ><i class="fab fa-linkedin fa-3x"></i
         ></a>
-        <a class="gitHub" href="https://github.com/dmaurer3394" role="button"
+        <a
+          class="gitHub"
+          href="https://github.com/dmaurer3394"
+          target="blank"
+          role="button"
           ><i class="fab fa-github fa-3x"></i
         ></a>
       </nav>
@@ -107,10 +112,17 @@
     <div class="container mid-container">
       <h1 id="education" class="display-4 page-head">Education</h1>
       <hr class="my-4" />
-      <img
-        src="../images/case_western.png"
-        alt="Case Western Reserve University"
-      />
+      <div class="jumbotron">
+        <img
+          id="cwru"
+          src="../images/case_western.png"
+          alt="Case Western Reserve University"
+        />
+        <hr class="my-4" />
+        <h4 class="page-head" id="education">
+          Graduated with Certificate in Full Stack Web Development and a 4.0 GPA
+        </h4>
+      </div>
     </div>
     <div class="container">
       <h1 id="contact" class="display-4 page-head">Contact me</h1>
@@ -160,9 +172,14 @@
         ></textarea>
       </div>
       <br />
-      <button type="button" class="btn btn-primary" id="submit">
+      <button type="button" class="btn btn-dark btn-lg" id="submit">
         <i class="fas fa-paper-plane"></i> Send
       </button>
     </div>
   </body>
+  <footer>
+    <div>
+      <!-- <p>This is the footer</p> -->
+    </div>
+  </footer>
 </html>

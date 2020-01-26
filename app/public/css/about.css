@@ -1,18 +1,8 @@
-/* #bio-img {
-  height: 200px;
-  width: 200px;
-  padding: 15px 10px 10px 20px;
-  float: left;
-  border-radius: 50%;
-  shape-outside: circle();
-  margin-left: -25px;
-  margin-right: 15px;
-} */
-
 body {
   background-image: url(../images/email-pattern.png);
   background-repeat: inherit;
   background-attachment: fixed;
+  padding-bottom: 5rem;
 }
 
 nav {
@@ -34,9 +24,15 @@ ul {
 
 li {
   display: inline-block;
-  color: black;
+  color: #0b304d;
   padding: 0 1rem;
   font-size: 18px;
+  /* transition: 0.35s all ease; */
+}
+
+li:hover {
+  color: black;
+  /* transition: 0.35s all ease; */
 }
 
 .scrolled {
@@ -118,4 +114,53 @@ li {
 
 #submit {
   float: right;
+}
+
+#cwru {
+  margin: -155px 0px -125px -75px;
+  width: 65%;
+}
+
+.card-img {
+  width: 82%;
+}
+
+.shadow-sm {
+  box-shadow: 0.1rem 0.3rem 0.6rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.btn-dark {
+  background-color: #0b304d;
+  transition: 0.35s all ease;
+}
+
+.btn-dark:hover {
+  background-color: black;
+  transition: 0.35s all ease;
+}
+
+#education {
+  font-weight: lighter;
+  margin-bottom: -30px;
+}
+
+.card-title {
+  font-size: 2.5rem;
+  font-weight: lighter;
+}
+
+.card-text {
+  font-size: 1.2rem;
+}
+
+.card-body {
+  padding: 0rem;
+  position: relative;
+}
+
+.card-btn {
+  float: right;
+  position: absolute;
+  bottom: -3.5rem;
+  right: 0rem;
 }

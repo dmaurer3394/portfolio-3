@@ -29,7 +29,7 @@ $(function() {
 
       projectArray.forEach(i => {
         const projectCard = `
-        <div class="card mb-3 shadow-sm p-3 bg-white rounded">
+        <div class="card mb-3 shadow-sm p-2 bg-white rounded">
           <div class="row no-gutters">
             <div class="col-md-4">
               <img src="${i.picture}" class="card-img" alt="${i.name}">
@@ -39,7 +39,7 @@ $(function() {
                 <h2 class="card-title">${i.name}</h2>
                 <hr/>
                 <p class="card-text">${i.description}</p>
-                <a href="${i.link}" target="_blank"><button id="go" class="btn btn-primary">See More</button></a>
+                <a href="${i.link}" target="_blank"><button id="go" class="btn btn-dark btn card-btn">See More</button></a>
               </div>
             </div>
           </div>
@@ -67,6 +67,11 @@ $(function() {
     };
 
     console.log(messageToMe);
+
+    $.post("/api/message", messageToMe, function(res, err) {
+      console.log(res);
+      console.log(err);
+    });
   });
 
   // Select all links with hashes
