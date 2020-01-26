@@ -72,6 +72,18 @@ $(function() {
     $("#message").val("");
   };
 
+  buttonDisable = () => {
+    if (
+      $("#name").val() === "" ||
+      $("#email").val() === "" ||
+      $("#message").val() === ""
+    ) {
+      $("#submit").attr("disabled", true);
+    } else {
+      $("#submit").attr("disabled", false);
+    }
+  };
+
   updateCountdown = () => {
     let remaining = 255 - $("#message").val().length;
     $("#countdown").text(remaining);
@@ -156,4 +168,6 @@ $(function() {
   getProjects();
   updateCountdown();
   $("#message").keyup(updateCountdown);
+  buttonDisable();
+  $(".my-input").keyup(buttonDisable);
 });
