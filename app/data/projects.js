@@ -6,7 +6,7 @@ const projects = [
     go: "stop",
     description:
       "Home management application for setting household chores, storing pet information, and tracking the items in your pantry",
-    link: "#"
+    link: "https://vestahome.herokuapp.com/"
   },
   {
     name: "Campground Connection",
@@ -20,7 +20,7 @@ const projects = [
   {
     name: "Tech Trivia",
     picture: "../images/trivia_screenshot.png",
-    button: "See what you know",
+    button: "Take the test",
     go: "go",
     description:
       "Technology trivia game asking questions both new and old referring to several genres of tech",
@@ -56,7 +56,7 @@ const projects = [
   {
     name: "Love Calculator",
     picture: "../images/blackhearts.png",
-    button: "How compatible are you?",
+    button: "Check compatiblity",
     go: "go",
     description:
       "Find out how compatible you and your crush really are, and even get a poem to read back to them",
