@@ -178,5 +178,5 @@ $(function() {
   $("#message").keyup(updateCountdown);
   buttonDisable();
   $(".my-input").keyup(buttonDisable);
-  $("#stop").attr("disabled", true);
+  // $("#stop").attr("disabled", true);
 });
