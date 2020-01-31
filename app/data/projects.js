@@ -32,7 +32,7 @@ const projects = [
     button: "Play",
     go: "go",
     description:
-      "These four crystals are given a random value and you're given a total you must hit exactly to win. Conveniently keeps track of your wins and losses",
+      "Four crystals are given a random value and you're given a total you must hit exactly to win. Keeps track of your wins and losses",
     link: "https://dmaurer3394.github.io/crystal-collector/"
   },
   {
@@ -41,11 +41,11 @@ const projects = [
     button: "Make a friend",
     go: "go",
     description:
-      "Have you ever wondered which character from Bojack Horseman you're most likely to pair well with? Maybe not...but you can find out anyway",
+      "Ever wondered which character from Bojack Horseman you're most likely to pair well with? Maybe not...but you can find out anyway",
     link: "https://bojack-horseman-quiz.herokuapp.com/"
   },
   {
-    name: "GID Search",
+    name: "GIF Search",
     picture: "../images/gif-search.png",
     button: "Search GIFs",
     go: "go",
