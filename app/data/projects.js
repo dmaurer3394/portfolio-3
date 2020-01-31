@@ -2,7 +2,7 @@ const projects = [
   {
     name: "Vesta",
     picture: "../images/vesta-logo-icon-black.png",
-    button: "Coming Soon",
+    button: "Manage your home",
     go: "go",
     description:
       "Home management application for setting household chores, storing pet information, and tracking the items in your pantry",
