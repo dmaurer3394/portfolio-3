@@ -1,0 +1,3 @@
+- Make nav bar mobile responsive / remove on mobile?
+- Take a new profile picture
+- 

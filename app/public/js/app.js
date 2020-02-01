@@ -23,6 +23,11 @@ $(function() {
     }
   });
 
+  // $(window).breakpoint("inside", "sm", function() {
+  //   console.log("here");
+  //   $("nav").hide();
+  // });
+
   getProjects = () => {
     $.get("/api/projects").then(res => {
       const projectArray = res;
@@ -93,7 +98,7 @@ $(function() {
 
   updateCountdown = () => {
     let remaining = 255 - $("#message").val().length;
-    $("#countdown").text(remaining);
+    $("#countdown").html(remaining);
   };
 
   $("#submit").on("click", function(event) {
