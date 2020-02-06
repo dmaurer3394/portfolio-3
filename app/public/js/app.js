@@ -9,6 +9,7 @@ $(function() {
       $("#to-top")
         .show()
         .html("<i class='fas fa-angle-double-up'></i>");
+      $(".email").html("<i class='fas fa-at fa-2x'></i>");
       $(".linkedIn").html("<i class='fab fa-linkedin fa-2x'></i>");
       $(".gitHub").html("<i class='fab fa-github fa-2x'></i>");
     } else {
@@ -18,6 +19,7 @@ $(function() {
       $("#education-item").html("<i class='fas fa-university'></i> Education");
       $("#contact-item").html("<i class='fas fa-edit'></i> Contact");
       $("#to-top").hide();
+      $(".email").html("<i class='fas fa-at fa-3x'></i>");
       $(".linkedIn").html("<i class='fab fa-linkedin fa-3x'></i>");
       $(".gitHub").html("<i class='fab fa-github fa-3x'></i>");
     }
@@ -49,6 +51,7 @@ $(function() {
                   </div>
                   <div class="col-4">
                     <a href="${i.link}" target="_blank"><button id="${i.go}" class="btn btn-dark btn card-btn">${i.button}</button></a>
+                    <a href="${i.github}" target="_blank"><button id="${i.repoGo}" class="btn btn-light btn repo-btn">${i.repoButton}</button></a>
                   </div>
                 </div>
               </div>

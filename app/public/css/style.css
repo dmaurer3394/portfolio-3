@@ -65,6 +65,24 @@ li:hover {
   width: 20%;
 }
 
+.email {
+  color: #a3a3a3;
+  transition: 0.35s all ease;
+  position: absolute;
+  right: 164px;
+  top: 70px;
+  margin-top: -3rem;
+}
+
+.email:hover {
+  color: #a3a3a3;
+}
+
+.scrolled .email {
+  transition: 0.35s all ease;
+  top: 62px;
+}
+
 .linkedIn {
   color: #0077b5;
   transition: 0.35s all ease;
@@ -139,9 +157,23 @@ li:hover {
   transition: 0.35s all ease;
 }
 
+.btn-light {
+  background-color: #c4c4c4;
+  transition: 0.35 all ease;
+}
+
+.btn-light:hover {
+  background-color: #a3a3a3;
+  transition: 0.35s all ease;
+}
+
 #education {
   font-weight: lighter;
-  margin-bottom: -30px;
+  margin-bottom: -1rem;
+}
+
+#cite {
+  margin-bottom: -2rem;
 }
 
 .card-title {
@@ -156,13 +188,6 @@ li:hover {
 .card-body {
   padding: 0rem;
   position: relative;
-}
-
-.card-btn {
-  float: right;
-  position: absolute;
-  /* bottom: -4.5rem; */
-  /* right: 0rem; */
 }
 
 #error {
@@ -180,6 +205,20 @@ li:hover {
 
 .character-limit {
   float: right;
+}
+
+.card-btn {
+  float: right;
+  position: absolute;
+  /* bottom: -4.5rem; */
+  /* right: 0rem; */
+}
+
+.repo-btn {
+  float: right;
+  position: absolute;
+  right: 1rem;
+  bottom: -1rem;
 }
 
 @media only screen and (max-width: 991px) {
