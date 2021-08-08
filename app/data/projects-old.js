@@ -20,7 +20,7 @@ const projects = [
     repoGo: "go",
     description:
       "Search and storing application relying on the National Park Service API to find you parks and campgrounds in your state or others",
-    link: "https://campground-connection-app.herokuapp.com/",
+    link: "https://dashboard.heroku.com/apps/campground-connection-app",
     github: "https://github.com/dmaurer3394/campground-connection"
   },
   {
@@ -34,18 +34,6 @@ const projects = [
       "Technology trivia game asking questions both new and old referring to several genres of tech",
     link: "https://dmaurer3394.github.io/trivia_game/",
     github: "https://github.com/dmaurer3394/trivia_game"
-  },
-  {
-    name: "GIF Search",
-    picture: "../images/gif-search.png",
-    button: "Search GIFs",
-    repoButton: "See the code",
-    go: "go",
-    repoGo: "go",
-    description:
-      "Giphy API search. Use the preset buttons, or make your own. You can even clear out the buttons or all the search results",
-    link: "https://dmaurer3394.github.io/GifTastic/",
-    github: "https://github.com/dmaurer3394/GifTastic"
   },
   {
     name: "Crystal Collector",
@@ -70,7 +58,31 @@ const projects = [
       "Ever wondered which character from Bojack Horseman you're most likely to pair well with? Maybe not...but you can find out anyway",
     link: "https://bojack-horseman-quiz.herokuapp.com/",
     github: "https://github.com/dmaurer3394/friend-finder"
+  },
+  {
+    name: "GIF Search",
+    picture: "../images/gif-search.png",
+    button: "Search GIFs",
+    repoButton: "See the code",
+    go: "go",
+    repoGo: "go",
+    description:
+      "Giphy API search. Use the preset buttons, or make your own. You can even clear out the buttons or all the search results",
+    link: "https://dmaurer3394.github.io/GifTastic/",
+    github: "https://github.com/dmaurer3394/GifTastic"
+  },
+  {
+    name: "Love Calculator",
+    picture: "../images/blackhearts.png",
+    button: "Check compatiblity",
+    repoButton: "See the code",
+    go: "go",
+    repoGo: "go",
+    description:
+      "Find out how compatible you and your crush really are, and even get a poem to read back to them",
+    link: "https://dmaurer3394.github.io/group-project-1/",
+    github: "https://github.com/dmaurer3394/group-project-1"
   }
 ];
 
-module.exports = projects;
+// module.exports = projects;
